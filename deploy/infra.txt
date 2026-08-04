@@ -1,0 +1,202 @@
+abdullocal initiated VPC creation
+abdullocal the VPC could not be created
+abdullocal initiated VPC creation
+abdullocal the VPC could not be created
+abdullocal initiated VPC creation
+abdullocal the VPC could not be created
+abdullocal initiated VPC creation
+abdullocal the VPC could not be created
+abdullocal initiated VPC creation
+abdullocal the VPC could not be created
+abdullocal initiated VPC creation
+abdullocal the VPC could not be created
+abdullocal initiated VPC creation
+abdullocal the VPC could not be created
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-04edd1285555fe4e0
+abdullocal the subnet could not be created
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-066d0d54495bc5c1b
+abdullocal the subnet could not be created
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-03afc0d8919d30a76
+abdullocal the subnet could not be created
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-040d6f50348dda8f7
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-01278b48725a1d15c
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0cc0b1c53e4d23d46
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-04ca5f4fd47ed0969
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-05a8d3c274fe8b3f7
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-091affdd85fa7cb27
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-01bfef6a1728c9c36
+abdullocal the subnet could not be created
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0d5c678d82a9581ec
+abdullocal the subnet could not be created
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-04cbfc483d7e97bc6
+abdullocal the subnet could not be created
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-05f860f6e2f815bde
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0688efe7508aa7977
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0e7958d0fdfa9b327
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-09e0f304a1f79a95a
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0782c97abf76938d5
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-09dc4db3406d532e3
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-04e7a4371b3640e58
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-09632234a28d109bc
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-09ed8ca21d160fca3
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0befad6bb0d26c43e
+abdullocal the internet gateway could not be created
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-06883079739817ff0
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0b1fd020a0cd0230d
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-07976665f6207fb75
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-06eec9db8adf9389b
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-095c4f5c84e6f2b07
+abdullocal the internet gateway could not be created
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0219fcc8a958953ca
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0f63965d40dc20107
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-084e28e2a39f8bee8
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0ace536fbb7d10ab6
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0c09160be30555ff6
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-0bbb90f5e246c7b81
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-066e1c4a776f15646
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0dcc42d6b98b3e94d
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0f9f4af4c8ddc1354
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0e5a292a36ca5beb1
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-03492725ba3a6efe5
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-0818369dd75996d02
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0729a21def4562c9e
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-01572deeb8cd6e9b9
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-03a2ec540b2208cdf
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-06b8ff484e23d98e1
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-07fb4f45cf7ab9110
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-012cc763bec6f58b7
+abdullocal the internet gateway could not be associated with the VPC
+abdullocal initiated VPC creation
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-065da2ac020279000
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0ebe77dfd49ffe2e9
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0ebef161365d7c6d4
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-01f1508e1edf224b4
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0f43c57f8f5de9d4b
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-0164d9c6cc9e5b984
+abdullocal the internet gateway could not be associated with the VPC
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0e85472c604f0d244
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-01f2fae1557be05e3
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-011b5ffd10cea6ee9
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-045bb469cb18c07ce
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0abebe2550da5c9ac
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-05378a5b3659244c2
+abdullocal the internet gateway could not be associated with the VPC
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0c9c7d2da2c956d96
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0db21f5d616960b58
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-065716719e5b71609
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-024d560c7645eb653
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0ad42ac45ba9e929e
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-05ff690015807735f
+abdullocal the internet gateway associated with the VPC_ID:vpc-0c9c7d2da2c956d96
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-088d2f533112e1a3a
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0f19f4eea448b00d2
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-076c0c75a18232250
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0f2a1b1c6fa21951c
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-08f5b102e7ff9f752
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-093989518f129f6a7
+abdullocal the internet gateway associated with the VPC_ID:vpc-088d2f533112e1a3a
+abdullocal the internet route has been created succesfully in route table rtb-0297c677091f03d2f pointing to the gateway igw-093989518f129f6a7
+abdullocal initiated VPC creation
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0353d5a78b218281d
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-0b1c7ab65fc15e7b1
+abdullocal the internet gateway associated with the VPC_ID:vpc-0353d5a78b218281d
+abdullocal the internet route has been created succesfully in route table rtb-0d16abd4e1d5df302 pointing to the gateway igw-0b1c7ab65fc15e7b1
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0d5118852552ec66b
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-08e4329ffd13e1c55
+abdullocal the internet gateway associated with the VPC_ID:vpc-0d5118852552ec66b
+abdullocal the internet route has been created succesfully in route table rtb-03c3b420fef60a41f pointing to the gateway igw-08e4329ffd13e1c55
+abdullocal the Route table could not be created
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0a4d380f2ce134daa
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-07cf60078386898f2
+abdullocal the internet gateway associated with the VPC_ID:vpc-0a4d380f2ce134daa
+abdullocal the internet route has been created succesfully in route table rtb-06964ab32a701d239 pointing to the gateway igw-07cf60078386898f2
+abdullocal your Route table has succesfully been created, ROUTE_TABLE_ID: rtb-03d959b829f7bb5f1
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0e8cba67f177ab7ef
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0be5b9c126a2f4626
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0220ab4461a391058
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-06e7c6c2448c18e1e
+abdullocal Failed to associate subnet null with route table null
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-08aed1e1cc4e1bf82
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-0987ed1df23d3cae7
+abdullocal the internet gateway associated with the VPC_ID:vpc-08aed1e1cc4e1bf82
+abdullocal the internet route has been created succesfully in route table rtb-0503557a2b1f5cc7f pointing to the gateway igw-0987ed1df23d3cae7
+abdullocal your Route table has succesfully been created, ROUTE_TABLE_ID: rtb-0424afa86edda1a12
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-03ba4697a62568586
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-08cf96e905afbfed9
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-04214968c6f5c19ec
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0e17b5afe1558cd69
+abdullocal Failed to associate subnet null with route table rtb-03d959b829f7bb5f1
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-071b6884a5a18c4fc
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-0510fde8f1448aabe
+abdullocal the internet gateway associated with the VPC_ID:vpc-071b6884a5a18c4fc
+abdullocal the internet route has been created succesfully in route table rtb-0fea020c1d0e5b111 pointing to the gateway igw-0510fde8f1448aabe
+abdullocal your Route table has succesfully been created, ROUTE_TABLE_ID: rtb-0c9a37f2b5f15ca6d
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0c0e757ccf4579e4e
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0bfbdb8414ba5373f
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-05d72f2d1ca4d0e92
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-04aa6b00b8388e2df
+abdullocal Failed to associate subnet null with route table rtb-0424afa86edda1a12
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0c0561256459ab32a
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-083d09a353b482e5c
+abdullocal the internet gateway associated with the VPC_ID:vpc-0c0561256459ab32a
+abdullocal the internet route has been created succesfully in route table rtb-0c931e6cb44266999 pointing to the gateway igw-083d09a353b482e5c
+abdullocal your Route table has succesfully been created, ROUTE_TABLE_ID: rtb-0c50267312a9a74d0
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0d2df20713e5ad32d
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0df6b7136be5233a6
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0e9818dbb4e33d500
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-01152562f2aff08ee
+abdullocal Failed to associate subnet subnet-0d2df20713e5ad32d with route table rtb-0c9a37f2b5f15ca6d
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-01644f61284369cef
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-05d626ac941f8f2c7
+abdullocal the internet gateway associated with the VPC_ID:vpc-01644f61284369cef
+abdullocal the internet route has been created succesfully in route table rtb-0f47d5b92a0a88fba pointing to the gateway igw-05d626ac941f8f2c7
+abdullocal your Route table has succesfully been created, ROUTE_TABLE_ID: rtb-099e1745ea112955c
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0a75468cf39e324b7
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0e64090d0721c4dfd
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-02f6eb594983e8296
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-07eed35d4d7f41e5e
+abdullocal Failed to associate subnet subnet-0a75468cf39e324b7 with route table 
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0d71f216774fdba25
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-01ddf141edf2978f6
+abdullocal the internet gateway associated with the VPC_ID:vpc-0d71f216774fdba25
+abdullocal the internet route has been created succesfully in route table rtb-0a72bfdfae9d5ef4e pointing to the gateway igw-01ddf141edf2978f6
+abdullocal your Route table has succesfully been created, ROUTE_TABLE_ID: rtb-0cf0c1732bc518d01
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-03861776e16d072fa
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-08958ee4e10deb6c3
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-006ba55e21dd9c49f
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0d096d2af00145f72
+abdullocal Failed to associate subnet subnet-03861776e16d072fa with route table rtb-099e1745ea112955c
+abdullocal initiated VPC creation
+abdullocal your VPC named production-vpc has been succesfully Created, VPC_ID: vpc-0382988ea2d571f33
+abdullocal the internet gateway has been created INTERNET_GATEWAY_ID: igw-041254d2efad8214c
+abdullocal the internet gateway associated with the VPC_ID:vpc-0382988ea2d571f33
+abdullocal the internet route has been created succesfully in route table rtb-09624599682ffeb81 pointing to the gateway igw-041254d2efad8214c
+abdullocal your Route table has succesfully been created, ROUTE_TABLE_ID: rtb-04e488b326d2bb9fa
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0a7753496069aa8d7
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0639262039a0d74a7
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0108c06e56e8f6c00
+abdullocal your Subnet has succesfully been created, Subnet_ID: subnet-0c012ff8e4e941435
+abdullocal Association ID: rtbassoc-03dbf4d027585b040
+abdullocal Association ID: rtbassoc-088d93b341d845545
