@@ -8,6 +8,10 @@ source ../infra/accosiate_internet_gateway.sh
 source ../infra/create_internet_route.sh
 source ../infra/create_private_routetable.sh
 source ../infra/associate_subnet_route_table.sh
+source ../infra/allocate_elastic_ip.sh
+source ../infra/create_nat_gateway.sh
+source ../infra/wait_for_nat_gateway.sh
+source ../infra/create_private_nat_route.sh
 
 main() {
 
@@ -37,10 +41,12 @@ main() {
 	INTERNET_GATEWAY_ID=$(yq '.internet_gateway.internet_gateway_id' "$CONFIG_FILE")
 	VPC_ID=$(yq '.vpc.vpc_id' "$CONFIG_FILE")
 	ROUTE_TABLE_ID=$(yq '.vpc.route_table_id' "$CONFIG_FILE")
-	#PRIVATE_ROUTE_TABLE_ID=$(yq '.private_route_table.route_table_id' "$CONFIG_FILE")
 	ROUTE_TABLE_NAME=$(yq ".private_route_table.name" "$CONFIG_FILE")
+	#PUBLIC_SUBNET_ID=$(yq ".subnet_public_1.subnet_id" "$CONFIG_FILE")
+	ELASTIC_IP_ALLOCATION_ID=$(yq ".nat_gateway.allocation_id" "$CONFIG_FILE")
+  	#NAT_GATEWAY_ID=$(yq ".nat_gateway.nat_gateway_id" "$CONFIG_FILE")
+	PRIVATE_ROUTE_TABLE_ID=$(yq ".private_route_table.route_table_id" "$CONFIG_FILE")
 
-  	
 	create_vpc  || exitfn 1 "the vpc could not be created" 
 	create_internet_gateway || exitfn 1 "the Internet Gateway could not be created"
         associate_internet_gateway || exitfn 1 "the Internet Gateway could not be associated"
@@ -69,11 +75,23 @@ main() {
 	done
 	
 	PRIVATE_ROUTE_TABLE_ID=$(yq '.private_route_table.route_table_id' "$CONFIG_FILE")
+	
 	for ((i=1; i<="$PRIVATE_SUBNETS"; i++))
         do
 		PRIVATE_SUBNET_ID=$(yq ".subnet_private_$i.subnet_id" "$CONFIG_FILE")
 		associate_subnet_route_table || exitfn 1 "the private route table could not be associted to the private subnet"
 	done
+	
+
+	allocate_elastic_ip || exitfn 1 "the elastic ip allocation failed"
+	
+	PUBLIC_SUBNET_ID=$(yq ".subnet_public_1.subnet_id" "$CONFIG_FILE")
+	create_nat_gateway || exitfn 1 "the natgateway could not be provisioned"
+	NAT_GATEWAY_ID=$(yq ".nat_gateway.nat_gateway_id" "$CONFIG_FILE")
+	wait_for_nat_gateway || exitfn 1 "the wait for natgateway was interrupted"
+	create_private_nat_route || exitfn 1 "the private route pointing to nat gateway could not be succesfull"
+
+
 	#create_internet_gateway || exitfn 1 "the Internet Gateway could not be created"      
 	#associate_internet_gateway || exitfn 1 "the Internet Gateway could not be associated"
 	#create_internet_route || exitfn 1 "the internet route could not be added to the main route table to point towards the internet gateway"
