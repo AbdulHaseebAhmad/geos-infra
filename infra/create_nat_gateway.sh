@@ -8,6 +8,7 @@ create_nat_gateway() {
     NAT_GATEWAY_ID=$(aws ec2 create-nat-gateway \
         --subnet-id "$PUBLIC_SUBNET_ID" \
         --allocation-id "$ELASTIC_IP_ALLOCATION_ID" \
+	--tag-specifications "ResourceType=natgateway,Tags=[{Key=Name,Value=$NAT_GATEWAY_NAME}]" \
         --query "NatGateway.NatGatewayId" \
         --output text)
 
