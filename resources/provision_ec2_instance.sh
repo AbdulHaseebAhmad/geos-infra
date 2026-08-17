@@ -17,7 +17,7 @@ provision_ec2_instance(){
 	    --subnet-id "$SUBNET_ID" \
 	    --security-group-ids "$SECURITY_GROUP_ID" \
 	    --key-name "$KEY_NAME" \
-	    --user-data file://./user-data.sh \
+	    --user-data file://../resources/user-data.sh \
 	    --tag-specifications "ResourceType=instance,Tags=[{Key=Name,Value="$INSTANCE_NAME"}]" \
 	    --query "Instances[0].InstanceId" \
 	    --output text)

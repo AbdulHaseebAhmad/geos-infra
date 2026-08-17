@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 apt-get update -y
@@ -15,7 +14,7 @@ Description=GEOS Backend Service
 After=network.target
 
 [Service]
-ExecStart=/var/www/geos-backend/geos-backend
+ExecStart=/var/www/geos-backend/geos-backend --config_path=/var/www/geos-backend/prodConfig.yaml
 Restart=always
 User=ubuntu
 WorkingDirectory=/var/www/geos-backend
@@ -24,9 +23,27 @@ WorkingDirectory=/var/www/geos-backend
 WantedBy=multi-user.target
 EOF
 
+cat <<EOF > /etc/nginx/sites-available/default
+server {
+    listen 80;
+
+    location / {
+        root /var/www/geos-frontend;
+        try_files \$uri \$uri/ /index.html;
+    }
+
+    location /api/ {
+        proxy_pass http://localhost:8000;
+        proxy_set_header Host \$host;
+        proxy_set_header X-Real-IP \$remote_addr;
+    }
+}
+EOF
 
 systemctl daemon-reload
 systemctl enable geos-backend
 
 systemctl enable nginx
 systemctl start nginx
+nginx -t
+systemctl reload nginx
