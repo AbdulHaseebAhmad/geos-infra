@@ -14,6 +14,8 @@ source ../resources/get_rds_secrets_arn.sh
 source ../resources/create_instance_profile.sh
 source ../resources/add_role_to_instance_profile.sh
 source ../resources/attach_iam_instance_profile.sh
+source ../infra/get_rds_endpoint.sh
+
 individual_execution(){
 	
 	CONFIG_FILE="../config/config.yaml"
@@ -88,7 +90,7 @@ individual_execution(){
 
 	INSTANCE_PROFILE_NAME=$(yq ".iam_role.app_instance_profile.name" "$CONFIG_FILE")
 	create_instance_profile || exitfn 1 "the instance profile could not be created"
-comment
+
 
 	 APP_INSTANCE_PROFILE_NAME=$(yq ".iam_role.app_instance_profile.name" "$CONFIG_FILE")
         APP_SECRETS_ROLE=$(yq ".iam_role.app_secrets_role.name" "$CONFIG_FILE")
@@ -100,6 +102,17 @@ comment
                 INSTANCE_ID=$(yq ".app_servers.instances.instance_"$i"_id" "$CONFIG_FILE")
                 attach_iam_instance_profile || exitfn 1 "the instance profile could not be attached"
         done
+
+	DB_IDENTIFIER=$(yq ".rds.name" "$CONFIG_FILE")
+	get_rds_endpoint 
+comment
+
+	PASSWORD=$(aws secretsmanager get-secret-value \
+    --secret-id "arn:aws:secretsmanager:us-east-1:329599643204:secret:rds!db-df23b251-491f-42fc-98e6-ea714475d630-ac6j3V" \
+    --query SecretString \
+    --output text)
+echo "Exit code: $?"
+echo "the password is $PASSWORD"
 }
 
 individual_execution

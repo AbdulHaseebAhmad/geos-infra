@@ -22,7 +22,7 @@ source ../infra/create_db_private_routetable.sh
 source ../infra/create_db_subnet_group.sh
 source ../infra/create_rds_security_group.sh
 source ../infra/create_rds_db_instance.sh
-
+source ../infra/get_rds_endpoint.sh
 
 provision_infra() {
 
@@ -174,7 +174,7 @@ provision_infra() {
 	
 		
 	create_rds_db_instance || exitfn 1 "The RDS db Instance could not be created"
-	
+	get_rds_endpoint || exitfn  1 "The RDS db endpoint could not be retrieved"	
 }
 
 
