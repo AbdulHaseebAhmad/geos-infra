@@ -13,7 +13,7 @@ add_role_to_instance_profile(){
 	then
 		echo "failed to add role to iam profile"
 		log "failed to add role to iam profile"
-		reutrn 1
+		return 1
 	fi
 
 	INSTANCE_PROFILE_ROLES=$(aws iam get-instance-profile \

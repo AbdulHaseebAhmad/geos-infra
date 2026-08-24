@@ -25,6 +25,7 @@ create_instance_profile(){
 	then
 		echo "the instance profile created but arn could not be fetched"
 		log  "the instance profile created but arn could not be fetched"
+		return 1
 	fi
 
 	echo "the instance profile created and arn fetched and saved"

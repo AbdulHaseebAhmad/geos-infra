@@ -23,4 +23,6 @@ provision_ec2_sg(){
 	log "Security group provisioned with security group id = "$SECURITY_GROUP_ID""
        	echo "Security group provisioned with security group id = "$SECURITY_GROUP_ID""
 	yq -i ".app_servers.security_group_id = \"$SECURITY_GROUP_ID\"" ../config/config.yaml
+	yq -i ".rds.ingress_rule.source_group = \"$SECURITY_GROUP_ID\"" ../config/config.yaml
+	return 0
 }

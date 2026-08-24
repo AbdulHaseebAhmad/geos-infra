@@ -19,6 +19,20 @@ create_rds_security_group(){
 		return 1
 	fi
 
+	echo "adding RDS SG Tag"
+	log  echo "adding RDS SG Tag"
+	aws ec2 create-tags \
+    		--resources "$DB_SG_ID" \
+    		--tags "Key=Name,Value=$RDS_SG_NAME"
+	
+
+	if [[ $? -ne 0 ]];
+        then
+                echo "Failed to add RDS security group tag"
+                log "Failed to add RDS security group tag"
+                
+        fi
+
 	echo "RDS security group succesfuly created with security group id = "$DB_SG_ID""
         log "RDS security group succesfuly created with security group id = "$DB_SG_ID""
 	yq -i ".rds.security_group.security_group_id = \"$DB_SG_ID\""	../config/config.yaml

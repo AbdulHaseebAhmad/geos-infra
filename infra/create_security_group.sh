@@ -22,5 +22,7 @@ create_security_group(){
 	log "ALB Security Group created: $ALB_SECURITY_GROUP_ID"
 	echo "ALB Security Group created: $ALB_SECURITY_GROUP_ID"
 	yq -i ".application_load_balancer.alb_security_group_id = \"$ALB_SECURITY_GROUP_ID\"" ../config/config.yaml
+	#yq -i ".app_servers.ingress_rule_1.alb_security_group_id = \"$ALB_SECURITY_GROUP_ID\"" ../config/config.yaml
+	yq -i ".app_servers.ingress_rule_2.source_group= \"$ALB_SECURITY_GROUP_ID\"" ../config/config.yaml
 	return 0
 }	

@@ -44,8 +44,8 @@ EOF
 
 cat <<EOF > /var/www/geos-backend/prodConfig.yaml
 env: production
-secret_arn: "__SECRET_ARN__"
-rds_endpoint: "__RDS_ENDPOINT__"
+secret_arn: "arn:aws:secretsmanager:us-east-1:329599643204:secret:rds!db-89c6cec8-de6e-4ff3-9656-d94cd39ab7d1-1UTlYS"
+rds_endpoint: "geos-db-instance.c7uskuk88uxd.us-east-1.rds.amazonaws.com"
 http_server:
   Address: "0.0.0.0:8000"
 smtp:

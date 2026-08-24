@@ -55,6 +55,20 @@ create_rds_db_instance(){
 	echo "the db secret arn succsefully retrieved and stored"
 	log "the db secret arn succsefully retrieved and stored"	
 	yq -i ".rds.secrets_arn = \"$DB_SECRET_ARN\"" ../config/config.yaml
+
+
+	DB_ENDPOINT=$(aws rds describe-db-instances \
+	    --db-instance-identifier "$DB_IDENTIFIER" \
+	    --query "DBInstances[0].Endpoint.Address" \
+	    --output text)
+	if [[ $? -ne 0 ]];
+	then
+	        echo "the db endpoint could not be retrieved"
+	        log "the db endpoint could not be retrieved"
+	fi
+	echo "the db endpoint succesfully retrieved and stored"
+	log "the db endpoint succesfully retrieved and stored"
+	yq -i ".rds.endpoint = \"$DB_ENDPOINT\"" ../config/config.yaml
 	return 0
 
 
