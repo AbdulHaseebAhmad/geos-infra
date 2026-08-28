@@ -28,16 +28,17 @@ source ../infra/add_role_to_instance_profile.sh
 source ../infra/attach_secrets_permissions_policy.sh
 source ../resources/provision_ec2_sg.sh
 source ../infra/create_edu_connect_database.sh
+
 provision_infra() {
 
 	if [[ $? -ne 0 ]];
 	then 
 		exit 1
 	fi
-	
-
 	CONFIG_FILE="../config/config.yaml"
 	
+
+
 	REGION=$(yq '.region' "$CONFIG_FILE")
 	VPC_NAME=$(yq '.vpc.name' "$CONFIG_FILE")
 	VPC_CIDR=$(yq '.vpc.cidr' "$CONFIG_FILE")
@@ -175,7 +176,9 @@ provision_infra() {
 
 
 	create_rds_security_group || exitfn 1 "the rds security group could not be created"
-	
+
+
+
 	DB_IDENTIFIER=$(yq ".rds.name" "$CONFIG_FILE")
 	DB_CLASS=$(yq ".rds.type" "$CONFIG_FILE")
 	DB_ENGINE=$(yq ".rds.engine" "$CONFIG_FILE")
@@ -184,9 +187,12 @@ provision_infra() {
 	DB_USERNAME=$(yq ".rds.username" "$CONFIG_FILE")
 	DB_SUBNET_GROUP=$(yq ".db_subnet_group.name" "$CONFIG_FILE")
 	DB_SG_ID=$(yq ".rds.security_group.security_group_id" "$CONFIG_FILE")
-	RDS_ENDPOINT=$(yq ".rds.endpoint" "$CONFIG_FILE")
-		
+	
 	create_rds_db_instance || exitfn 1 "The RDS db Instance could not be created"
+	
+
+
+	RDS_ENDPOINT=$(yq ".rds.endpoint" "$CONFIG_FILE")
 		
 	IAM_ROLE_NAME=$(yq ".iam_role.app_secrets_role.name" "$CONFIG_FILE")
         provision_iam_role || exitfn 1 "The iam role could not be provisioned"	
@@ -205,7 +211,7 @@ provision_infra() {
 	DB_SECRET_ARN=$(yq ".rds.secrets_arn" "$CONFIG_FILE")
 	attach_secrets_permissions_policy || exitfn 1 "failed to attach secrets permission policy"
 	
-	create_edu_connect_database || exitfn 1 "failed to create edu-connect database"
+	#create_edu_connect_database || exitfn 1 "failed to create edu-connect database"
 
 }
 

@@ -18,8 +18,10 @@ create_edu_connect_database() {
 
     DB_USERNAME=$(echo "$SECRET_JSON" | jq -r '.username')
     DB_PASSWORD=$(echo "$SECRET_JSON" | jq -r '.password')
+echo $DB_PASSWORD
 
-    log "Creating edu-connect database..."
+<<comment 
+	log "Creating edu-connect database..."
 
     PGPASSWORD="$DB_PASSWORD" psql \
         -h "$RDS_ENDPOINT" \
@@ -36,5 +38,5 @@ create_edu_connect_database() {
 
     log "edu-connect database created successfully"
     echo "edu-connect database created successfully"
-
+comment
 }

@@ -1,0 +1,132 @@
+region: eu-west-2
+vpc:
+  name: geos-vpc
+  cidr: 
+  tenancy: default
+  vpc_id: 
+  route_table_id: 
+internet_gateway:
+  internet_gateway_name: geos_igw
+  internet_gateway_id: 
+private_route_table:
+  name: rtb_geos_private
+  route_table_id: 
+  association_id: 
+private_db_route_table:
+  name: rtb_geos_db_private
+  route_table_id: 
+  association_id: ""
+subnets:
+  public_subnets: 2
+  private_subnets: 4
+subnet_public_1:
+  name: geos_public_1
+  cidr: 
+  availability_zone: us-east-1a
+  subnet_id: 
+subnet_private_1:
+  name: geos_private_1
+  cidr: 
+  availability_zone: us-east-1a
+  subnet_id: 
+subnet_public_2:
+  name: geos_public_2
+  cidr: 
+  availability_zone: us-east-1b
+  subnet_id: 
+subnet_private_2:
+  name: geos_private_2
+  cidr: 
+  availability_zone: us-east-1b
+  subnet_id: 
+subnet_private_3:
+  name: geos_db_private_1
+  cidr: 
+  availability_zone: us-east-1a
+  subnet_id: 
+subnet_private_4:
+  name: geos_db_private_2
+  cidr: 
+  availability_zone: us-east-1b
+  subnet_id: 
+nat_gateway:
+  name: geos-nat-gateway
+  allocation_id: 
+  nat_gateway_id: 
+alb_target_group:
+  target_group_name: geos-alb-target-group
+  target_group_arn: 
+application_load_balancer:
+  alb_securrity_group_name: geos-alb-security-group
+  alb_security_description: geos-alb-security-group
+  alb_security_group_id: 
+  alb_name: geos-alb
+  alb_arn: 
+  http_listener_arn: 
+db_subnet_group:
+  name: geos-db-subnet-group
+  description: "Isolated subnets for RDS"
+  arn: 
+rds:
+  name: geos-db-instance
+  type: db.t3.micro
+  engine: postgres
+  version: 16
+  storage: 20
+  username: geosadmin
+  secrets_arn: 
+  security_group:
+    name: geos-db-security-group
+    description: "RDS access from app tier only"
+    security_group_id: 
+  ingress_rule:
+    protocol: tcp
+    port: 5432
+    source_group: 
+  endpoint: 
+iam_role:
+  app_secrets_role:
+    name: geos-secrets-role-db
+    arn: 
+    policy_name: geos-secrets-policy-db
+  app_instance_profile:
+    name: geos-secrets-profile-db
+    arn: 
+app_servers:
+  security_group_id: 
+  security_group_name: geos-app-server-sg
+  security_group_description: geos-app-server-sg
+  ingress_rules: 2
+  ingress_rule_1:
+    protocol: tcp
+    port: 22
+    source_group: 
+  ingress_rule_2:
+    protocol: tcp
+    port: 80
+    source_group: 
+  instances:
+    number_of_instances: 2
+    instance_name: geos-app-server
+    instance_ami_id: ami-0b6d9d3d33ba97d99
+    instance_type: t3.micro
+    instance_key_pair: geos_app_server
+    instance_1_id: 
+    instance_2_id: 
+  bastion_security_group_id: 
+bastion_server:
+  security_group_id: 
+  security_group_name: geos-bastion-server-sg
+  security_group_description: geos-bastion-server-sg
+  ingress_rules: 1
+  ingress_rule_1:
+    protocol: tcp
+    port: 22
+    cidr: 0.0.0.0/0
+  instances:
+    number_of_instances: 1
+    instance_name: geos-bastion-server
+    instance_ami_id: ami-0b6d9d3d33ba97d99
+    instance_type: t3.micro
+    instance_key_pair: geos_bastion_server
+    instance_1_id: 
