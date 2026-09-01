@@ -27,7 +27,7 @@ See [docs/architecture.md](docs/architecture.md) for the full diagram and
 
 ## Status
 
-🚧 Actively being built. Progress and issues tracked via GitHub Issues.
+🚧 Built Completed.
 
 ## Cutover plan
 
